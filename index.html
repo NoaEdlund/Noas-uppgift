@@ -37,12 +37,12 @@
                 <img src="images/pexels-photo-461428.jpeg"
                      class="product-image"
                      alt="Trådlösa hörlurar">
-                <h1>Headphones</h1>
+                <h2>Headphones</h2>
                 <p class="product-description">
                     High quality headphones with amazing sound. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <p class="product-price">599 kr</p>
-                <div class="add-to-cart">Add to cart</div>
+                <button class="add-to-cart">Add to cart</button>
             </div>
 
             <div class="product-card">
@@ -57,7 +57,7 @@
                 <button class="add-to-cart">Add to cart</button>
             </div>
 
-            <div class="product-card">
+            <button class="product-card">
                 <img src="images/pexels-photo.jpg"
                      class="product-image"
                      alt="Digital Systemkamera för högupplösta fotografier">
@@ -66,7 +66,7 @@
                     Capture your best moments in high resolution. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <p class="product-price">3499 kr</p>
-                <div class="add-to-cart">Add to cart</div>
+                <button class="add-to-cart">Add to cart</button>
             </div>
         </div>
     </div>
@@ -85,5 +85,12 @@
         <p>© 2025 MyShop. All rights reserved.</p>
         <a href="#">Click here</a>
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.2/axe.min.js"></script>
+<script>
+    window.onload = function () {
+    axe.run().then(results => {
+    console.log("Axe results:", results);
+    });
+</script>
 </body>
 </html>
