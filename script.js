@@ -1,16 +1,16 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    var items = document.querySelectorAll(".add-to-cart");
+    const items = document.querySelectorAll(".add-to-cart");
     items.forEach(function (item) {
         item.addEventListener("click", function () {
             alert("Item added to cart!");
         });
     });
 
-    var newsletterButton = document.querySelector(".newsletter .primary-button");
-    if (newsletterButton) {
-        newsletterButton.addEventListener("click", function (e) {
+    var newsletterForm = document.querySelector(".newsletter form");
+    if (newsletterForm) {
+        newsletterForm.addEventListener("submit", function (e) {
             e.preventDefault();
             alert("Thank you for subscribing!");
         });
